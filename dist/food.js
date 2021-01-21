@@ -1,6 +1,6 @@
-"use strict";
+import { Score } from "./score.js";
 // 食べ物のカードクラス
-class Food {
+export class Food {
     constructor(element) {
         this.element = element;
         element.addEventListener('click', this.clickEventHandler.bind(this));

@@ -1,7 +1,7 @@
-"use strict";
+import { Food } from "./food.js";
 // 食べ物のカード一覧を管理するクラス
 // 一覧を保持する。食べ物自体（Foodクラス）の操作は行わない。
-class Foods {
+export class Foods {
     constructor() {
         // foodクラスのdiv要素をすべて取得
         this.elements = document.querySelectorAll('.food');

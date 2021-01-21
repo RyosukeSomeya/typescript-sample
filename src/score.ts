@@ -1,5 +1,8 @@
+import { Scoreble } from "./interfaces.js";
+import { Foods } from "./foods.js";
+
 // 食べ物のスコアを合計するクラス
-class Score implements Scoreble {
+export class Score implements Scoreble {
     private static instance: Score;
     get totalScore() {
         const foods = Foods.getInstance();

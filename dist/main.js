@@ -1,2 +1,2 @@
-"use strict";
-const foods = Foods.getInstance();
+import { Foods } from "./foods.js";
+Foods.getInstance();

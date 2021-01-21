@@ -1,5 +1,8 @@
+import { Foodable } from "./interfaces.js";
+import { Score } from "./score.js";
+
 // 食べ物のカードクラス
-class Food {
+export class Food　implements Foodable {
     constructor(public element: HTMLDivElement) {
         element.addEventListener('click', this.clickEventHandler.bind(this));
         // addEventListner内のcallback関数内のthisはクリックされた要素となるので、thisを明示的にbindする必要がある。

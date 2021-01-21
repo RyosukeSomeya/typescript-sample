@@ -1,6 +1,6 @@
-"use strict";
+import { Foods } from "./foods.js";
 // 食べ物のスコアを合計するクラス
-class Score {
+export class Score {
     constructor() { }
     get totalScore() {
         const foods = Foods.getInstance();
