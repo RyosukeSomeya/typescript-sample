@@ -15,7 +15,7 @@
     // "sourceMap": true,                     /* Generates corresponding '.map' file. */
     // "outFile": "./",                       /* Concatenate and emit output to single file. */
     "outDir": "./dist",                        /* Redirect output structure to the directory. */
-    // "rootDir": "./",                       /* Specify the root directory of input files. Use to control the output directory structure with --outDir. */
+    "rootDir": "./src",                       /* Specify the root directory of input files. Use to control the output directory structure with --outDir. */
     // "composite": true,                     /* Enable project compilation */
     // "tsBuildInfoFile": "./",               /* Specify file to store incremental compilation information */
     // "removeComments": true,                /* Do not emit comments to output. */
@@ -68,9 +68,9 @@
     "forceConsistentCasingInFileNames": true  /* Disallow inconsistently-cased references to the same file. */
   },
   // その他オプション
-  // "include": [ // コンパイルするファイルを指定する。includeとfilesに記述がない場合は、すべてのファイルがコンパイルの対象となる。
-  //   "index.ts"
-  // ],
+  "include": [ // コンパイルするファイルを指定する。includeとfilesに記述がない場合は、すべてのファイルがコンパイルの対象となる。
+    "./src/"
+  ],
   // "exclude": [// 除外するファイルを指定する。パスの起点はルート。 "**/compiler.ts"でパスのワイルドカードになる。
   //   "**/compiler.ts",
   //   "*.spec.js",
