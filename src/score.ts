@@ -1,5 +1,5 @@
-import { Scoreble } from "./interfaces.js";
-import { Foods } from "./foods.js";
+import { Scoreble } from "./interfaces";
+import { Foods } from "./foods";
 
 // 食べ物のスコアを合計するクラス
 export class Score implements Scoreble {

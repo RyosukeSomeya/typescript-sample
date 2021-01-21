@@ -1,5 +1,5 @@
-import { Foodable } from "./interfaces.js";
-import { Score } from "./score.js";
+import { Foodable } from "./interfaces";
+import { Score } from "./score";
 
 // 食べ物のカードクラス
 export class Food　implements Foodable {
