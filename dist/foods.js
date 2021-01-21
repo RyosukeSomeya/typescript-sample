@@ -1,35 +1,4 @@
 "use strict";
-// 食べ物のスコアを合計するクラス
-class Score {
-    constructor() { }
-    get totalScore() {
-        const foods = Foods.getInstance();
-        return foods.activeElementsScore.reduce((total, score) => total + score);
-    }
-    render() {
-        document.querySelector('.score__number').textContent = String(this.totalScore);
-    }
-    static getInstance() {
-        if (!Score.instance) {
-            Score.instance = new Score();
-        }
-        return Score.instance;
-    }
-}
-// 食べ物のカードクラス
-class Food {
-    constructor(element) {
-        this.element = element;
-        element.addEventListener('click', this.clickEventHandler.bind(this));
-        // addEventListner内のcallback関数内のthisはクリックされた要素となるので、thisを明示的にbindする必要がある。
-    }
-    clickEventHandler() {
-        this.element.classList.toggle('food--active');
-        // bindがないとthisはクリックされた要素を指す。
-        const score = Score.getInstance();
-        score.render();
-    }
-}
 // 食べ物のカード一覧を管理するクラス
 // 一覧を保持する。食べ物自体（Foodクラス）の操作は行わない。
 class Foods {
@@ -71,4 +40,3 @@ class Foods {
         return Foods.instance;
     }
 }
-const foods = Foods.getInstance();
